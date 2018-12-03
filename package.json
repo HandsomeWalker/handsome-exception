@@ -1,0 +1,25 @@
+{
+  "name": "handsome-exception",
+  "version": "1.0.0",
+  "description": "exceptions handler for error when chained calling from object",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HandsomeWalker/handsome-exception.git"
+  },
+  "keywords": [
+    "exception",
+    "object",
+    "error",
+    "handler"
+  ],
+  "author": "dreamcreativehub@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HandsomeWalker/handsome-exception/issues"
+  },
+  "homepage": "https://github.com/HandsomeWalker/handsome-exception#readme"
+}
