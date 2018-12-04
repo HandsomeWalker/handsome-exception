@@ -1,16 +1,8 @@
-function handsome(target, options) {
-    let res, handler = {
-        get: function(t, k) {
-            let r;
-            try {
-                r = Reflect.get(t, k);
-            }catch(e) {
-                r = undefined;
-            }
-            return r;
-        }
-    };
-    res = new Proxy(target, handler);
-    return res;
+function _proxy(obj, options) {
+    return new Proxy(obj, {
+		get: function(target, key) {
+			return _proxy(new Object(target[key]));
+		}
+	});
 }
-module.exports = handsome;
+module.exports = _proxy;
