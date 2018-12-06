@@ -1,6 +1,10 @@
 [English](https://github.com/HandsomeWalker/handsome-exception/blob/master/README.md) | 中文
 # handsome-exception
 简单对象链式调用异常处理器
+# 安装
+```
+npm install --save handsome-exception
+```
 # 用法
 ```
 let obj = handler({name: 'jack'}, 'exception!');

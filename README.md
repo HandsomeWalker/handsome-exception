@@ -1,6 +1,10 @@
 English | [中文](https://github.com/HandsomeWalker/handsome-exception/blob/master/README_zh.md)
 # handsome-exception
 simple exceptions handler for error when chained calling from object
+# Install
+```
+npm install --save handsome-exception
+```
 # Usage
 ```
 let obj = handler({name: 'jack'}, 'exception!');
