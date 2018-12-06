@@ -1,12 +1,12 @@
 # handsome-exception
-对象链式调用异常处理器
+简单对象链式调用异常处理器
 # 用法
 ```
 let obj = handler({name: 'jack'}, 'exception!');
 console.log(obj.name()); // jack
 console.log(obj.e.r.r.o.r()); // exception!
 ```
-模板语法使用(vue)
+# 模板语法使用(vue)
 
 ```
 <template>

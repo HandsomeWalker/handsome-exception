@@ -1,5 +1,5 @@
 # handsome-exception
-exceptions handler for error when chained calling from object
+simple exceptions handler for error when chained calling from object
 # Usage
 ```
 let obj = handler({name: 'jack'}, 'exception!');
