@@ -1,3 +1,4 @@
+English | [中文](https://github.com/HandsomeWalker/handsome-exception/edit/master/README_zh.md)
 # handsome-exception
 simple exceptions handler for error when chained calling from object
 # Usage

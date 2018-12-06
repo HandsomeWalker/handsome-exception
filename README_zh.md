@@ -1,3 +1,4 @@
+[English](https://github.com/HandsomeWalker/handsome-exception/edit/master/README.md) | 中文
 # handsome-exception
 简单对象链式调用异常处理器
 # 用法
