@@ -7,6 +7,8 @@ npm install --save handsome-exception
 ```
 # 用法
 ```
+import handler from 'handsome-exception';
+
 let obj = handler({name: 'jack'}, 'exception!');
 console.log(obj.name()); // jack
 console.log(obj.e.r.r.o.r()); // exception!
