@@ -24,7 +24,7 @@ console.log(obj.e.r.r.o.r()); // exception!
 </template>
 
 <script>
-import handler from 'handsome-exceptions';
+import handler from 'handsome-exception';
 export default {
   name: 'handsome',
   data() {

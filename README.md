@@ -23,7 +23,7 @@ console.log(obj.name.a.b.c.d()); // exception!
 </template>
 
 <script>
-import handler from 'handsome-exceptions';
+import handler from 'handsome-exception';
 export default {
   name: 'handsome',
   data() {
