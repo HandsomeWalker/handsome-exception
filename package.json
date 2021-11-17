@@ -1,6 +1,6 @@
 {
   "name": "handsome-exception",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "exceptions handler for error when chained calling from object",
   "main": "index.js",
   "typings": "index.d.ts",

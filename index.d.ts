@@ -12,4 +12,4 @@ interface FuncProps <T> {
 	console.log(obj.name()); // jack
 	console.log(obj.name.a.b.c.d()); // exception!
  */
-export default function handsome<T> (obj: object, except_res: T): FuncProps<T>;
+export default function handsome<T> (obj: any, except_res: T): FuncProps<T>;
