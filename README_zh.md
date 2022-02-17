@@ -12,6 +12,7 @@ import handler from 'handsome-exception';
 let obj = handler({name: 'jack'}, 'exception!');
 console.log(obj.name()); // jack
 console.log(obj.e.r.r.o.r()); // exception!
+console.log(obj.e.r.r.o.r('other exception!')); // other exception!
 ```
 # 模板语法使用(vue)
 
@@ -20,6 +21,7 @@ console.log(obj.e.r.r.o.r()); // exception!
   <div id="handsome">
     {{obj.name()}} <!-- jack -->
     {{obj.e.r.r.o.r()}} <!-- 出错啦! -->
+    {{obj.e.r.r.o.r("又出错啦!")}} <!-- 又出错啦! -->
   </div>
 </template>
 

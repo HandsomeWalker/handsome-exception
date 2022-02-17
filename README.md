@@ -12,6 +12,7 @@ import handler from 'handsome-exception';
 let obj = handler({name: 'jack'}, 'exception!');
 console.log(obj.name()); // jack
 console.log(obj.name.a.b.c.d()); // exception!
+console.log(obj.e.r.r.o.r('other exception!')); // other exception!
 ```
 # Template syntax(vue)
 ```
@@ -19,6 +20,7 @@ console.log(obj.name.a.b.c.d()); // exception!
   <div id="handsome">
     {{obj.name()}} <!-- jack -->
     {{obj.e.r.r.o.r()}} <!-- exception! -->
+    {{obj.e.r.r.o.r("other exception!")}} <!-- other exception! -->
   </div>
 </template>
 

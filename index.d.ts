@@ -1,6 +1,3 @@
-interface FuncProps <T> {
-    [key: string]: () => T | any;
-}
 /**
  * simple exceptions handler for error when chained calling from object
  * @param {object} obj
@@ -11,5 +8,6 @@ interface FuncProps <T> {
 	let obj = handler({name: 'jack'}, 'exception!');
 	console.log(obj.name()); // jack
 	console.log(obj.name.a.b.c.d()); // exception!
+	console.log(obj.e.r.r.o.r('other exception!')); // other exception!
  */
-export default function handsome<T> (obj: any, except_res: T): FuncProps<T>;
+export default function handsome<T = any> (obj: any, except_res?: any): T;
