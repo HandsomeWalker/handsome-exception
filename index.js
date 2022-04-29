@@ -4,13 +4,13 @@
  * @param {*} except_res
  * @returns {object} proxy object
  * @example
- 	import handler from 'handsome-exception';
-	let obj = handler({name: 'jack'}, 'exception!');
+ 	import handsomeException from 'handsome-exception';
+	let obj = handsomeException({name: 'jack'}, 'exception!');
 	console.log(obj.name()); // jack
 	console.log(obj.name.a.b.c.d()); // exception!
 	console.log(obj.e.r.r.o.r('other exception!')); // other exception!
  */
-function handsome(obj, except_res) {
+function handsomeException(obj, except_res) {
 	let handler = {
 		_flag: false,
 		get: (target, key) => {
@@ -30,10 +30,11 @@ function handsome(obj, except_res) {
 				} else {
 					res = except_res
 				}
+				handler._flag = false;
 			}
 			return res
 		}
 	};
 	return new Proxy(() => obj, handler)
 }
-module.exports = handsome
+module.exports = handsomeException
